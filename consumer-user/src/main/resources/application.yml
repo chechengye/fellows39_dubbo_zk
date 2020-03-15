@@ -1,0 +1,10 @@
+dubbo:
+  application:
+    name: consumer-user
+  registry: #配置注册中心，用来发布提供者的服务
+    address: zookeeper://192.168.0.109:2181
+  protocol:
+    port: 12398 #默认的端口号是20880，不与其它服务提供者的端口号重复
+
+server:
+  port: 8081
